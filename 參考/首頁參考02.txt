@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-minimal.min.css" />
+    <link rel="stylesheet" href="css/all.css">
+    <title>vllv index</title>
+</head>
+
+<body class="homePage">
+    <nav class="my-navbar my-navbar__expand--md">
+        <div class="container d-flex justify-content-between">
+            <a href="/index.html" style="display: flex; align-items: center;">
+                <img style="width: 40px; border-radius: 50%" src="img/logo-w-401.jpg">
+            </a>
+            <p class="text-left" style="color: rgb(70, 70, 216); font-size: 20px; padding-top: 20px; padding-bottom: 0; z-index: 2;">目前所在：註冊後 登入首頁</p>
+            <label class='my-navbar__toggler border border-2 border-light-subtle rounded'>
+                <input type="checkbox" class="d-none">
+                <span class='pe-none'></span>
+                <span class='pe-none'></span>
+                <span class='pe-none'></span>
+                <span class='pe-none'></span>
+            </label>
+            <div class="my-navbar__collapse">
+                <ul>
+                    <li><a href="./courseIntroduce.html">課程介紹</a></li>
+                    <li><a href="./review.html"         >課程回顧</a></li>
+                    <li><a href="./aboutUs.html"        >關於我們</a></li>
+                    <li><a href="./joinUs.html"         >加入團隊</a></li>
+                    <li><a href="./teachSupport.html"   >教學支援</a></li>
+                    <li><a href="./webFunction.html"    >網站功能</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="position: absolute; inset: 0; z-index:999;height:100vh; pointer-events: none;" id="navbarBro"></div>
+    <div class="banner d-flex flex-center">
+        <!-- 以下程式 定義了一個三角形形狀的剪裁路徑，可以用來對其他元素進行剪裁操作，通常用於製作特殊形狀的圖片或視覺效果。 -->
+        <svg width="0" height="0">
+            <defs>
+                <clipPath id="bannerClip" clipPathUnits="objectBoundingBox">
+                    <path d="M0 0 V0.75 C0.2 1,0.8 1,1 0.75 V0 z" />
+                </clipPath>
+            </defs>
+        </svg>
+
+        <div class="banner__text w-30 pt-5 pb-5 d-flex flex-column flex-center position-relative shadow">
+            <h2 class="text-light fw-bold fs-1 family-monospace">接種一劑 失戀疫苗</h2>
+            <h3 class="text-light fs-4 fw-bolder">情感教育 課程活動</h3>
+            <h3 class="text-light fs-4 fw-bolder family-monospace">提升青少年 挫折耐受力</h3>
+            <div
+                class="position-absolute top-0 start-0 p-3  border  border-3 border-end-0 border-bottom-0 border-light">
+            </div>
+            <div
+                class="position-absolute top-0 end-0 p-3  border  border-3 border-start-0 border-bottom-0 border-light">
+            </div>
+            <div
+                class="position-absolute bottom-0 start-0 p-3  border  border-3 border-top border-end-0 border-top-0 border-light">
+            </div>
+            <div
+                class="position-absolute bottom-0 end-0 p-3  border  border-3 border-top border-start-0 border-top-0 border-light">
+            </div>
+        </div>
+    </div>
+    <div class="banner2 d-flex flex-center">
+        <svg width="0" height="0">
+            <defs>
+                <clipPath id="banner2Clip" clipPathUnits="objectBoundingBox">
+                    <path d="M0 0 V0.75 C0.2 1,0.8 1,1 0.75 V0 z" />
+                </clipPath>
+            </defs>
+        </svg>
+    </div>
+    <main class="pt-5 position-relative">
+        <section class="mb-5 ps-5 position-absolute top-0  start-0 end-0" id="news"
+            style="transform: translateY(-85%);">
+            <div class="rounded-circle d-flex flex-column justify-content-center align-items-center"
+                style="box-shadow: 0 0 50px -30px black; background-image: linear-gradient(-45deg, #ed6ea0 0%, #FFA99F 100%); max-width: 450px; width: 35%; aspect-ratio: 1; filter: saturate(1.8) hue-rotate(20deg);">
+                <h2 class="text-light fs-3 text-center m-0">緣起說明</h2>
+                <ul class='vSlider'>
+                    <div id="newsSlider" class="slider" style="flex-grow: 1 0 100%;"></div>
+                </ul>
+                <h2 class="m-0 ms-auto me-auto" style="width:fit-content"><a href="./news.html" id="moreNews"
+                        class="text-light fs-3 ps-3 pe-3 pb-2 border-bottom border-2 border-light">更多說明</a></h2>
+            </div>
+        </section>
+        從 為女兒 在小學畢業考結束後、畢業典禮舉行前 設計一個 全學年同學 都能一起玩的 三天活動，歷時 11 年的演化，成為一套：實施於 全學年、完整 的 情感教育課程活動。
+
+        教學方法
+        Teaching Strategies
+        採用 張輝誠 老師 的
+        學思達 教學法
+        藉由 分組競賽 的方式
+        利用 自編教材
+        進行 六種行動 之 循環演練
+        期能 培養學生 帶得走
+        且 終生受用 之 六項能力
+        閱讀、思考、判斷
+        聆聽、陳述、書寫
+        
+        學生 從
+        課堂中 被動的 聽講者
+        轉變為 競賽中 主動的
+        參賽者 及 裁判
+        
+        教師 從
+        課堂中 知識的 傳講人
+        變身為 活動的
+        策畫人 與 主持人
+        以及能
+        引導學生思考 的 提問者
+
+
+單元01：認識自己 欣賞同學
+《About me關於我》
+《分組意向 調查表》
+《我 欣賞 哪一型》
+《誰是 我的麻吉》
+
+單元02：分組競賽 學習聆聽
+《各組成員分工職掌》
+《分組競賽 裁判筆記》
+
+單元03：告白追求 有經驗嗎
+《告白的經驗》
+《追求的行為》
+
+單元04：收送禮物 大有學問
+《禮物的收送》
+
+單元05：如何告白 如何拒絕
+《合宜的告白》
+
+單元06：愛是什麼 需要學習
+《愛的典範》
+《五種愛之語》
+《擁有「愛」的能力》
+《恐怖情人》
+
+單元07：「失戀疫苗」是什麼？
+《疫苗的原理》
+《失戀疫苗 的 5W》
+
+單元08：練習告白 對象志願 調查
+《寫出六個志願》
+《徵求友愛同學勇氣獎得主》
+
+單元09：合宜的告白–分組競演
+《發揮創意的劇本》
+《甩掉偶包的演出》
+
+單元10：接種 失戀疫苗 流程說明
+《畢業考結束後 我們要告白》
+《畢業典禮前 我們失戀了？》
+
+單元11：啦啦隊競賽 流程演練
+《寫出最給力的加油口號》
+《選出我們斑的隊長》
+《決定我們斑的隊呼》
+
+【告白練習】
+全年級 接種一劑 失戀疫苗
+
+【班際競賽】啦啦隊競賽
+
+【填寫】課程暨活動 回饋單
+
+【頒獎】
+合宜的告白 最佳劇本獎
+各班 人氣王
+友愛同學勇氣獎
+啦啦隊競賽 班際排名
+
+        <section class="mb-5 mt-5 " id="product">
+            <div class="container pt-5">
+                <h2 class="text-uppercase text-center mt-5 mb-5 fs-1 fw-bold color-text-fourth-color user-select-none"
+                    style="text-shadow: 0px 2px 2.5px;">product</h2>
+                <div id="productCarousel" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <!-- <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button> -->
+                    </div>
+                    <div class="carousel-inner">
+                        <!-- <div class="carousel-item active">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div> -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <h2 class="d-flex justify-content-center mt-3"><a href="./product.html" class="btn btn-primary">more</a></h2>
+            </div>
+        </section>
+        <section id="tips" style="clip-path: url(#tipsClip);">
+            <svg width="0" height="0">
+                <defs>
+                    <clipPath id="tipsClip" clipPathUnits="objectBoundingBox">
+                        <path d="M0 0 C.4 .08,.6 .08,1 0 V1 H0 z" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <div class="container pt-5">
+                <h2 class="text-uppercase text-center mt-5 mb-5 fs-1 fw-bold color-text-fourth-color user-select-none"
+                    style="text-shadow: 0px 2px 2.5px;">delicious tips</h2>
+                <div class="row m-auto" id="tipsList">
+                    <div class="col-md-4 mt-5">
+                        <div class="invisible card bgImg border-0 animate__animated" data-tip="職人手做">
+                            <h2 class="p-5 text-center user-select-none">堅持每一道製作的小細節，維繫產品的新鮮。</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <div class="invisible card bgImg border-0 animate__animated animate__delay-1s" data-tip="品質堅持">
+                            <h2 class="p-5 text-center user-select-none">堅持每一道製作的小細節，維繫產品的新鮮。</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <div class="invisible card bgImg border-0 animate__animated animate__delay-2s" data-tip="減量包裝">
+                            <h2 class="p-5 text-center user-select-none">減少過度塑膠包裝降低成本，以優惠的價格傳達一份烘烤心意。</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="m-0 row" id="honor">
+            <div class="col-4 bgImg p-0"></div>
+            <div class="col-8 d-flex flex-column justify-content-evenly bg-light bg-gradient bg-opacity-10">
+                <div class="d-flex">
+                    <h2 class="col-md-6">樸實．簡單．美味<br><small>商品沒有精緻的裝飾，沒有富麗的裝潢，只有平易的價格，與傳達一份我們悉心烘烤的心意</small></h2>
+                </div>
+                <div class="d-flex" id="counterWrap">
+                    <div class="col-4">
+                        <h2 class="text-center">獲獎</h2>
+                        <div class="odometer d-flex justify-content-center align-items-center">0</div>
+                    </div>
+                    <div class="col-4">
+                        <h2 class="text-center">粉絲</h2>
+                        <div class="odometer d-flex justify-content-center align-items-center">0</div>
+                    </div>
+                    <div class="col-4">
+                        <h2 class="text-center">據點</h2>
+                        <div class="odometer d-flex justify-content-center align-items-center">0</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5 pb-5" id="branches">
+            <h2 class="text-center mb-3">分店資訊</h2>
+            <div class="row m-0">
+                <div class="col-lg-5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5946.978420911477!2d120.5984606168149!3d24.181902000820124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e1e5070a7a7%3A0xa462167a0845084d!2z6Lev5oCd576p5pWZ5aCC!5e0!3m2!1szh-TW!2stw!4v1704749570743!5m2!1szh-TW!2stw"
+                        style="border:0;width: 100%; aspect-ratio: 6/4;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-7">
+                    <div class="mySelect-wrap fa-solid mb-5" data-status="&#xf110" id="branchesList">
+                        <select name="" class="mySelect cursor-pointer" disabled>
+                            <option value="none" class="d-none">載入中</option>
+                        </select>
+                    </div>
+                    <div id="branchInfo"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2 class="fs-4 text-light-emphasis text-end m-0">by 楊正庸</h2>
+    </footer>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="shopListOffcanvas"
+        aria-labelledby="shopListOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="shopListOffcanvasLabel">購物清單</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="mb-5" id="shopList">
+                <!-- <li class='border-bottom border-1 mb-2'>
+              <div class="row mb-2">
+                <div class="col-2 p-0"><img src="https://fakeimg.pl/600x600/282828/EAE0D0/?text=bread" data-index="0"></div>
+                <div class="col-8 d-flex flex-column justify-content-evenly pe-0">
+                  <h2 class="fs-6 fw-normal">吐司</h2>
+                  <h2 class="fs-6 fw-normal">蒜香奶油吐司</h2>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-2 p-0"></div>
+                <div class="col-8 d-flex justify-content-between pe-0">
+                  <h2 class='d-flex align-items-end fs-6 fw-normal'>1xNT$298</h2>
+                  <button type="button" class="fa-solid fa-trash-can"></button>
+                </div>
+              </div>
+            </li> -->
+            </ul>
+            <button class="myBtn d-block w-100">訂單結帳</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+    <script src="./js/myselect.js"></script>
+    <script src="./js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
